@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+   background-color: black;
+}
+
+.navbar{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: transparent;
+}
+.navbar a{
+   color: white;
+   padding: 37px 70px;
+   text-decoration: none;
+   text-align: center;
+}
+.navbar.menu-icon{
+   display: none;
+   font-size: 26px;
+   color: white;
+   cursor: pointer;
+   padding: 14px 20px;
+}
+@media screen and (max-width:768px) {
+   .navbar a{
+      display: none;
+   }
+   .navbar.navbar.menu-icon{
+      display: block;
+   }
+   .navbar.responsive{
+      flex-direction: column;
+   }
+   .navbar.responsive.menu-icon{
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+   .navbar.responsive a{
+      display: block;
+      text-align: left;
+   }
+}
+
+#h1-Text{
+   background: linear-gradient(to right,red,blue);
+   -webkit-background-clip: text;
+   color: transparent;
+}
+#webLink{
+}
+#source{
+
+}
